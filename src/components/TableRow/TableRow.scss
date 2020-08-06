@@ -1,0 +1,34 @@
+@import 'styles/variables';
+
+.TableRow {
+  border-bottom: 1px solid $color_border-gray;
+}
+
+.TableRow-Color {
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.TableRow-Button {
+  width: 25px;
+  height: 25px;
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &_edit {
+    margin-right: 5px;
+    background-image: url('../../assets/icons/pencil-edit.svg');
+  }
+  &_remove {
+    background-image: url('../../assets/icons/delete.svg');
+  }
+}
+
+.TableRow-Controls {
+  display: flex;
+  justify-content: center;
+}

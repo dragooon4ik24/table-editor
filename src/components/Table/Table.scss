@@ -1,0 +1,84 @@
+@import 'styles/variables';
+
+.Table-Content {
+  width: 100%;
+  font-size: 14px;
+
+  th {
+    text-align: left;
+  }
+
+  td,
+  th {
+    padding: 10px;
+  }
+
+  @include tablet {
+    font-size: initial;
+  }
+}
+
+.Table-Name {
+  padding: 0;
+
+  position: relative;
+  font-weight: bold;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: -15px;
+    transform: rotateX(180deg);
+
+    height: 15px;
+    width: 12.3px;
+
+    background-image: url('../../assets/icons/up-arrow.svg');
+    background-repeat: no-repeat;
+  }
+
+  &_unsorted {
+    &:after {
+      transform: rotate(0);
+    }
+  }
+}
+
+.Table-Color {
+  font-size: 0;
+
+  @include tablet {
+    font-size: initial;
+  }
+}
+.Table-Controls {
+  font-size: 0;
+}
+
+.Table-Empty {
+  padding: 10px;
+
+  text-align: center;
+}
+
+.Table-Actions {
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Table-Button {
+  padding: 10px;
+
+  border-radius: 3px;
+  border: 1px solid black;
+
+  &:hover {
+    color: white;
+    background-color: black;
+  }
+  &:active {
+    opacity: 0.8;
+  }
+}

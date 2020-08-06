@@ -1,0 +1,24 @@
+.VisuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  bottom: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.Container {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+  padding: 40px 25px 0;
+  margin: 0 auto;
+
+  background-color: $color_background-gray;
+
+  @include tablet {
+    padding: 40px 40px 0;
+  }
+}

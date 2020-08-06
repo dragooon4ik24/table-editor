@@ -1,0 +1,17 @@
+.TableEditor {
+  max-width: 700px;
+  margin: 0 auto;
+
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba($color: black, $alpha: 0.2);
+  background-color: white;
+}
+
+.TableEditor-Title {
+  padding-bottom: 15px;
+
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: bold;
+  text-align: center;
+}
