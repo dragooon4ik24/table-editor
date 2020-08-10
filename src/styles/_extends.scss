@@ -1,0 +1,13 @@
+%content-area {
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba($color: black, $alpha: 0.2);
+  background-color: white;
+}
+
+%color-circle {
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+  border: 1px solid black;
+}

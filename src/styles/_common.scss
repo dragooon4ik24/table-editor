@@ -2,16 +2,38 @@
   max-width: 700px;
   margin: 0 auto;
 
-  border-radius: 2px;
-  box-shadow: 0 2px 5px 0 rgba($color: black, $alpha: 0.2);
-  background-color: white;
+  @extend %content-area;
 }
 
 .TableEditor-Title {
-  padding-bottom: 15px;
+  padding: 10px 0 15px;
 
   font-size: 22px;
   line-height: 34px;
   font-weight: bold;
   text-align: center;
+
+  @include tablet {
+    font-size: 26px;
+    line-height: 40px;
+  }
+}
+
+.CommonButton {
+  padding: 8px;
+
+  border-radius: 3px;
+  border: 1px solid black;
+
+  &:hover {
+    color: white;
+    background-color: black;
+  }
+  &:active {
+    opacity: 0.8;
+  }
+
+  @include tablet {
+    padding: 10px;
+  }
 }

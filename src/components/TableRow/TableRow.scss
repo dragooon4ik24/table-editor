@@ -5,11 +5,7 @@
 }
 
 .TableRow-Color {
-  width: 18px;
-  height: 18px;
-
-  border-radius: 50%;
-  border: 1px solid black;
+  @extend %color-circle;
 }
 
 .TableRow-Button {

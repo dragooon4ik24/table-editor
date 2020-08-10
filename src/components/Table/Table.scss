@@ -1,8 +1,16 @@
 @import 'styles/variables';
 
+.Table {
+  font-size: 14px;
+
+  @include tablet {
+    font-size: initial;
+  }
+}
+
 .Table-Content {
   width: 100%;
-  font-size: 14px;
+  margin-bottom: 5px;
 
   th {
     text-align: left;
@@ -14,7 +22,7 @@
   }
 
   @include tablet {
-    font-size: initial;
+    margin-bottom: 10px;
   }
 }
 
@@ -66,19 +74,4 @@
   padding: 10px 10px;
   display: flex;
   justify-content: space-between;
-}
-
-.Table-Button {
-  padding: 10px;
-
-  border-radius: 3px;
-  border: 1px solid black;
-
-  &:hover {
-    color: white;
-    background-color: black;
-  }
-  &:active {
-    opacity: 0.8;
-  }
 }

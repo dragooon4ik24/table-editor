@@ -8,6 +8,8 @@
     "@testing-library/user-event": "^7.2.1",
     "normalize.css": "^8.0.1",
     "react": "^16.13.1",
+    "react-app-polyfill": "^1.0.6",
+    "react-color": "^2.18.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },
@@ -24,12 +26,14 @@
     "production": [
       ">0.2%",
       "not dead",
-      "not op_mini all"
+      "not op_mini all",
+      "IE 11"
     ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
-      "last 1 safari version"
+      "last 1 safari version",
+      "IE 11"
     ]
   },
   "devDependencies": {
