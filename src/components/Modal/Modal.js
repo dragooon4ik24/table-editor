@@ -4,6 +4,7 @@ import {SketchPicker} from 'react-color'
 import './Modal.scss'
 
 export default class Modal extends React.Component {
+  refInput = React.createRef()
   state = {
     name: '',
     type: 'main',
@@ -48,6 +49,7 @@ export default class Modal extends React.Component {
     evt.preventDefault()
     if (!this.state.name) {
       this.setState((prevState) => ({...prevState, isValidate: false}))
+      this.refInput.current.focus()
     } else {
       this.props.onClose()
       this.props.onSubmit(this.state)
@@ -70,6 +72,7 @@ export default class Modal extends React.Component {
                   id="name"
                   type="text"
                   name="name"
+                  ref={this.refInput}
                   value={this.state.name}
                   onChange={this.handleInputNameChange}
                   required
